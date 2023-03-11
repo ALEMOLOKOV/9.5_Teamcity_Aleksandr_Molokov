@@ -41,7 +41,7 @@
 
 Для deploy будет необходимо загрузить settings.xml в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.
 
-
+![5 manage setting](https://user-images.githubusercontent.com/109212419/224482033-7344975c-00c6-4197-ad6f-adc5a78a331c.jpg)
 
 В pom.xml необходимо поменять ссылки на репозиторий и nexus.
 
