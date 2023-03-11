@@ -45,41 +45,55 @@
 
 В pom.xml необходимо поменять ссылки на репозиторий и nexus.
 
+![6 change pom_xml](https://user-images.githubusercontent.com/109212419/224507458-4adf5a9b-0826-4982-b1c5-6338a9156219.jpg)
 
 Запустите сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus.
 
+![7 nexus](https://user-images.githubusercontent.com/109212419/224508102-f40e7d40-4fae-4d8b-b45b-6a5f335e4f53.jpg)
 
 Мигрируйте build configuration в репозиторий.
 
+![8 migration to git rep](https://user-images.githubusercontent.com/109212419/224508589-2976633b-4ac8-499f-932c-1a66a69d0f58.jpg)
+
+![Ссылка на .teamcity](https://github.com/ALEMOLOKOV/example-teamcity/tree/master/.teamcity)
 
 Создайте отдельную ветку feature/add_reply в репозитории.
 
+![9 new branch](https://user-images.githubusercontent.com/109212419/224508882-7052f3ee-467b-43d4-a496-c8c8e46184d0.jpg)
 
 Напишите новый метод для класса Welcomer: метод должен возвращать произвольную реплику, содержащую слово hunter.
 
+![10 change welcomer](https://user-images.githubusercontent.com/109212419/224509388-5bd45e26-d146-4338-b11f-fee4a10ef5ec.jpg)
 
 Дополните тест для нового метода на поиск слова hunter в новой реплике.
 
+![11 chenge welcomertest](https://user-images.githubusercontent.com/109212419/224510131-89c5ba33-7539-454a-a6a6-21302391a50b.jpg)
 
 Сделайте push всех изменений в новую ветку репозитория.
 
-
 Убедитесь, что сборка самостоятельно запустилась, тесты прошли успешно.
 
+![13 build on new branch is ok](https://user-images.githubusercontent.com/109212419/224510307-0d2ff2aa-b302-46d7-b224-0252eb54c8ca.jpg)
 
 Внесите изменения из произвольной ветки feature/add_reply в master через Merge.
 
+![merge](https://github.com/aragastmatb/example-teamcity/commit/e9f263006035da1ac5c1ae32bb6c67010c83e1ea)
 
 Убедитесь, что нет собранного артефакта в сборке по ветке master.
 
-
 Настройте конфигурацию так, чтобы она собирала .jar в артефакты сборки.
 
+![16 change build](https://user-images.githubusercontent.com/109212419/224511615-4534ad9b-0f8c-4b17-bfea-0ce66a355b9a.jpg)
 
 Проведите повторную сборку мастера, убедитесь, что сбора прошла успешно и артефакты собраны.
 
+![17 artefacts](https://user-images.githubusercontent.com/109212419/224511729-d17080b4-64cb-4ee2-9023-bfdb5d0f4e2c.jpg)
 
 Проверьте, что конфигурация в репозитории содержит все настройки конфигурации из teamcity.
 
+![18 checking change in repo](https://user-images.githubusercontent.com/109212419/224511807-360743f9-3ad0-4a05-9b45-6ef37e48270a.jpg)
+
 
 В ответе пришлите ссылку на репозиторий.
+
+![Ссылка на репозиторий](https://github.com/ALEMOLOKOV/example-teamcity.git)
