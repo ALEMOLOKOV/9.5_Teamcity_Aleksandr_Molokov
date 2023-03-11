@@ -24,17 +24,23 @@
 # Основная часть
 Создайте новый проект в teamcity на основе fork.
 
+![1 create config from fork](https://user-images.githubusercontent.com/109212419/224479917-2acfb4a3-0c4d-4716-8ead-399d2e70dc93.jpg)
 
 Сделайте autodetect конфигурации.
 
+![2 auto-detect config](https://user-images.githubusercontent.com/109212419/224480102-8a9b867a-a616-4e26-8491-839e593e6892.jpg)
 
 Сохраните необходимые шаги, запустите первую сборку master.
 
+![3 1 first build](https://user-images.githubusercontent.com/109212419/224481018-25c45601-486d-498c-a12b-0bd2db5e0e46.jpg)
+![3 2 build logs](https://user-images.githubusercontent.com/109212419/224481028-3ab36c24-be16-40e5-857d-02aa00f7c340.jpg)
 
 Поменяйте условия сборки: если сборка по ветке master, то должен происходит mvn clean deploy, иначе mvn clean test.
 
+![4 change build config](https://user-images.githubusercontent.com/109212419/224481508-05352fc3-b36e-4698-8882-27efae4f5fa6.jpg)
 
 Для deploy будет необходимо загрузить settings.xml в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.
+
 
 
 В pom.xml необходимо поменять ссылки на репозиторий и nexus.
